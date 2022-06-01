@@ -1,0 +1,106 @@
+.body
+{
+  /* background-color:beige; */
+}
+.heading
+{
+    font-weight: bolder;
+    font-size: 2.9rem;
+    margin: 10px;
+}
+.carousel
+{
+    margin: 20px 10px 20px 10px;
+}
+.card
+{
+    border: none;
+    margin: 10px;
+}
+.card img
+{
+    border-radius: 50%;
+
+}
+.card-title
+{
+    text-align: center;
+    margin-bottom: 5px;
+}
+span
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+h1
+{
+    text-align: center;
+    margin: 40px;
+}
+
+.location
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    vertical-align: baseline;
+
+}
+.location h5
+{
+    text-align: center;
+}
+.info h6
+{
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 0;
+}
+.info2
+{
+    width: 80%;
+    margin: 2px auto;
+}
+.footer
+{
+    background-color: rgb(7, 56, 56);
+    color: aliceblue;
+    margin-top: 20px;
+    padding: 20px;
+}
+.footer p,.fa-brands
+{
+ text-align: center;
+}
+.fa-facebook,.fa-instagram-square,.fa-twitter
+{
+    width: 100px;
+            
+}
+@media (max-width:500px)
+{
+    .location
+    {
+        display: block;
+    }
+
+}
+/* @media (max-width:700px)
+{
+
+    .location
+    {
+        grid-template-columns: auto auto;
+
+    }
+    /* .card-group
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 80%;
+        margin: 0 auto;
+    }
+     */
+/* } */

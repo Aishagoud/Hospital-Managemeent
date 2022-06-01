@@ -1,0 +1,82 @@
+<div class="main_form">
+    <div class="form_body">
+<h1>Patients Registeration</h1>
+<div class="form">
+    <form [formGroup]="pat_reg" (submit)="postData()">
+        <div>
+            <label>Enter Patient Name : </label>
+            <input type="text" formControlName="name">
+        </div>
+        <div>
+            <label>Enter Patient Age : </label>
+            <input type="number" formControlName="age">
+        </div>
+        <div>
+            <label>Enter Patient Gender : </label>
+            <input type="radio" name="gender" value="female" formControlName="gender"> Female
+            <input type="radio" name="gender" value="male"  formControlName="gender"> Male
+            <input type="radio" name="gender" value="other"  formControlName="gender"> Others
+        </div>
+        <div>
+            <label for="">Enter Email Id</label>
+            <input type="email" formControlName="email"><br>
+            <span style="color: red; font-size:smaller; padding-left: 10px;" *ngIf="email && email.invalid">Enter valid Email Id</span>
+        </div>
+        <div>
+            <label for="">Current Condition</label>
+            <select name="" id="" formControlName="condition">100%
+                <option value="100%">100% recovered</option>
+                <option value="75%">75% recovered</option>
+                <option value="50%">50% recovered</option>
+            </select>
+        </div>
+        <div>
+            <label>Enter Patient Department : </label>
+            <input type="text" formControlName="dept">
+        </div>
+        <div>
+            <label>Enter Patient Location : </label>
+            <input type="text" formControlName="Location">
+        </div>
+        <div>
+            <label>Enter Patient Contact Number : </label>
+            <input type="tel" formControlName="Contact">
+        </div>
+        <div>
+            <label>Enter Patient Gardian Name : </label>
+            <input type="text" formControlName="Gardian_name">
+        </div>
+        <div>
+            <label>Enter Patient Gardian Number : </label>
+            <input type="tel" formControlName="Gardian_no">
+        </div>
+        <div>
+            <label>Enter Patient Date of Birth : </label>
+            <input type="date" formControlName="Dob">
+        </div>
+        <div>
+            <label>Enter Patient Doctor's Name : </label>
+            <input type="text" formControlName="Doctor">
+        </div>
+        <div>
+            <label>Enter Patient Current Bill Amount : </label>
+            <input type="number" formControlName="Bill">
+        </div>
+        <div>
+            <label>Enter Patient Bed Number : </label>
+            <input type="number" formControlName="Bedno">
+        </div>
+        <div>
+            <label>Enter Patient Medicine Given : </label>
+            <input type="text" formControlName="Medicine">
+        </div>
+        <!-- <div>
+            <label for="">Upload Files</label>
+            <input type="file" formControlName="Upload">
+        </div> -->
+        <div>
+            <button type="submit">Register</button>
+        </div>
+    </form>
+</div>
+</div></div>
